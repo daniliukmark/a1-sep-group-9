@@ -1,64 +1,56 @@
-# Simple CLI Password Manager
+# Report for Assignment 1
 
-A secure, command-line password manager written in Python. It uses AES-256
-encryption to store your passwords in a local, portable file.
+## Project
 
-## Features
+Description: TODO
 
--   **Strong Encryption:** Uses the `cryptography` library (Fernet) for
-    authenticated AES-128-CBC encryption.
--   **Secure Key Derivation:** Uses PBKDF2 with a strong iteration count to
-    protect your master password from brute-force attacks.
--   **Atomic Saves:** Never risk a corrupted password file. Saves are written
-    to a temporary file before replacing the original.
--   **Inactivity Timeout:** Automatically saves and locks the vault after 5
-    minutes of inactivity.
--   **Graceful Exit:** Catches `Ctrl+C` to ensure your work is always saved.
--   **Simple Commands:** Manage your passwords with an intuitive interactive
-    session (`get`, `set`, `list`, `del`).
+Programming language: TODO
 
-## Prerequisites
+## Initial tests
 
--   Python 3.6+
--   Git
+### Tests
 
-## Installation
+TODO: Add their code here
 
-1.  Clone the repository:
-    ```sh
-    git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
-    cd YOUR_REPOSITORY_NAME
-    ```
+### Coverage of initial tests
 
-2.  Install the required Python libraries:
-    ```sh
-    pip install -r requirements.txt
-    ```
+TODO: Inform the name of the existing tool that was executed and how it was executed
 
-## Usage
+TODO: Show the coverage results provided by the existing tool with a screenshot
 
-**To create a new vault:**
+## Coverage improvement
 
-Run the script with a filename that does not yet exist.
+### Individual tests
 
-```sh
-python password_manager.py my_vault.safe
-```
+TODO: The following is supposed to be repeated for each group member
 
-**To open an existing vault:**
+TODO: Group member name
 
-Run the script with the path to your vault file.
+TODO: Test 1
 
-```sh
-python password_manager.py my_vault.safe
-```
+TODO: Show a patch (diff) or a link to a commit made in your repository that shows the new test
 
-### Interactive Commands
+TODO: Provide a screenshot of the old coverage results (the same as you already showed above)
 
--   `get <service>`: Retrieve the password for a service.
--   `set <service> <user> <pass>`: Add or update a password.
--   `del <service>`: Delete a password entry.
--   `list`: List all services stored in the vault.
--   `help`: Show the command list.
--   `exit`: Save changes and lock the vault.
+TODO: Provide a screenshot of the new coverage results
 
+TODO: State the coverage improvement with a number and elaborate on why the coverage is improved
+
+Repeat for other tests...
+
+### Overall
+
+TODO: Provide a screenshot of the old coverage results by running an existing tool (the same as you already showed above)
+
+TODO: Provide a screenshot of the new coverage results by running the existing tool using all test modifications made by the group
+
+## Statement of individual contributions
+
+TODO: Write what each group member did. Use the following table for that and add additional text under it if you see fit.
+
+| Member | Three functions (names with links to the code on the repository) created | Initial test (name) | Other tests (names) |
+| --- | --- | --- | --- |
+| Member A | | | |
+| Member B | | | |
+| Member C | | | |
+| Member D | | | |
